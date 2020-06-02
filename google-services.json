@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "951629332271",
+    "firebase_url": "https://consultation-18b8d.firebaseio.com",
+    "project_id": "consultation-18b8d",
+    "storage_bucket": "consultation-18b8d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951629332271:android:aa9dcfa2b762a0f5",
+        "android_client_info": {
+          "package_name": "com.consultation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951629332271-m0bc5ttrkl0g7titosm060t78arvifjd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE_Cx0Jzc13EP4aA1R8gms98pSVxBXVKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951629332271-m0bc5ttrkl0g7titosm060t78arvifjd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

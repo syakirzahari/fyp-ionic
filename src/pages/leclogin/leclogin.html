@@ -1,0 +1,35 @@
+
+
+
+
+  <ion-content padding center text-center  class="bg-image">
+      <ion-buttons end><button ion-button (click)="closePage()">X</button></ion-buttons>
+    <br>
+   
+    <img src="assets/gg.png" id="style">
+    <br>
+    <br>
+
+      <ion-list>
+          <ion-item id="cool-button-div">
+            <ion-label>Username</ion-label>
+            <ion-input type="text" [(ngModel)]="lecturer.email" value=""></ion-input>
+          </ion-item>
+      </ion-list>
+        
+      <ion-list>
+          <ion-item id="cool-button-div">
+            <ion-label>Password</ion-label>
+            <ion-input type="password" [(ngModel)]="lecturer.password" value="" ></ion-input>
+          </ion-item>
+      </ion-list>
+      <br>
+
+        
+        <div padding id="style">
+          <button ion-button color="primary" block (click)="depan(lecturer)">Log-in</button>
+        <br><br><br>
+   
+        <button ion-button color="sz" (click)="goTo()">Request account</button>
+        </div>
+ </ion-content>

@@ -1,0 +1,49 @@
+<ion-header>
+
+  <ion-navbar color='primary'>
+    <ion-title>My Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-card><br>
+        <img src="assets/jasin.png" length="200" width="700">
+  
+    
+    <ion-grid><br><br>
+              <ion-row>
+                <ion-col style="background-color:#8EB1F6">NAME:</ion-col><br>
+                <ion-col> {{(profileData | async)?.name}}</ion-col>
+              </ion-row><br>
+              <ion-row>
+                  <ion-col style="background-color:#8EB1F6">STUDENT ID:</ion-col><br>
+                  <ion-col> {{(profileData | async)?.student}}</ion-col>
+              </ion-row><br>
+              <ion-row>
+                  <ion-col style="background-color:#8EB1F6">PROGRAM CODE:</ion-col><br>
+                  <ion-col> {{(profileData | async)?.program}}</ion-col>
+              </ion-row><br>
+              <ion-row>
+                  <ion-col style="background-color:#8EB1F6">GROUP:</ion-col><br>
+                  <ion-col> {{(profileData | async)?.group}} </ion-col>
+              </ion-row><br>
+              <ion-row>
+                  <ion-col style="background-color:#8EB1F6">PHONE NUMBER:</ion-col><br>
+                  <ion-col> {{(profileData | async)?.phoneNum}} </ion-col>
+              </ion-row><br>
+        
+      </ion-grid>
+
+
+      
+      <div  id="cool-button-div"> 
+      <button ion-button block (click)="editItem()">Update</button>
+      </div><br>
+      </ion-card>
+   
+    
+    
+
+</ion-content>

@@ -1,0 +1,49 @@
+<!--
+  Generated template for the LeceditprofPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Edit Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding="allign">
+
+        <ion-item>
+            <ion-label floating>Name</ion-label>
+            <ion-input type="text" value="" [(ngModel)]="lecturer.name"></ion-input>
+  
+        </ion-item>
+   
+         <ion-item>
+            <ion-label floating>Lecturer ID</ion-label>
+            <ion-input type="integer" value="" [(ngModel)]="lecturer.id" disabled></ion-input>
+         </ion-item>
+   
+         <ion-item>
+           <ion-label floating>Program Code</ion-label>
+           <ion-input type="text" value="" [(ngModel)]="lecturer.program"></ion-input>
+         </ion-item>
+   
+         <ion-item>
+             <ion-label floating>Subject</ion-label>
+             <ion-input type="text" value="" [(ngModel)]="lecturer.preferred"></ion-input>
+         </ion-item>
+   
+         <ion-item>
+                 <ion-label floating>Phone Number</ion-label>
+                 <ion-input type="integer" value="" [(ngModel)]="lecturer.phoneNum"></ion-input>
+         </ion-item><br>
+    
+       
+       <div padding>
+         <button ion-button color="light" block (click)="updateProfile()">Update</button>
+       </div>
+   
+   </ion-content>

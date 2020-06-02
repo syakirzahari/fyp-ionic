@@ -1,0 +1,43 @@
+
+<ion-header>
+
+  <ion-navbar color='primary'>
+    <ion-title>Finalize Your Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding="align">
+
+     <ion-item>
+          <ion-label floating>Name</ion-label>
+          <ion-input type="text" value="" [(ngModel)]="profile.name"></ion-input>
+     </ion-item>
+
+      <ion-item>
+          <ion-label floating>Student ID</ion-label>
+          <ion-input type="integer" value="" [(ngModel)]="profile.student"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Program Code</ion-label>
+        <ion-input type="text" value="" [(ngModel)]="profile.program"></ion-input>
+      </ion-item>
+      
+
+      <ion-item>
+          <ion-label floating>Group</ion-label>
+          <ion-input type="text" value="" [(ngModel)]="profile.group"></ion-input>
+        </ion-item>
+    
+      <ion-item>
+          <ion-label floating>Phone Number</ion-label>
+          <ion-input type="integer" value="" [(ngModel)]="profile.phoneNum"></ion-input>
+      </ion-item><br>
+
+
+    <button ion-button full (click)="presentItem()">Add</button>
+    <!---<button ion-button full (click)="addItem({name:name, student:student, program: program, group: group, sem: sem, phoneNum:phoneNum})">Add</button>-->
+    
+
+</ion-content>

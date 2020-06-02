@@ -1,0 +1,56 @@
+
+
+<ion-content padding center text-center><br>
+  
+    <h4>Consultation Info</h4><br>
+    <ion-content padding>
+    
+        <ion-item>
+          <ion-label>Name</ion-label>
+          <ion-input type="text" value="" [(ngModel)]="accepted.name" disabled></ion-input>
+      </ion-item>
+      
+      <ion-item>
+          <ion-label>Group</ion-label>
+          <ion-input type="integer" value=""  [(ngModel)]="accepted.group" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>Reason</ion-label>
+          <ion-input type="text" value=""  [(ngModel)]="accepted.notes" disabled></ion-input>
+        </ion-item>
+        
+        <ion-item>
+            <ion-label>Date</ion-label>
+            <ion-input type="integer" value=""  [(ngModel)]="accepted.date" disabled></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>Time</ion-label>
+              <ion-input type="integer" value=""  [(ngModel)]="accepted.time" disabled></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Course Code</ion-label>
+                <ion-input type="integer" value=""  [(ngModel)]="accepted.code" disabled></ion-input>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label>Lecturer</ion-label>
+                  <ion-input type="text" value=""  [(ngModel)]="accepted.lecturer" disabled></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>Status</ion-label>
+                    <ion-input type="text" value=""  [(ngModel)]="accepted.status" disabled></ion-input>
+                  </ion-item>  
+           
+       
+
+  <P>Done Consultation?</P><br>
+      
+
+<button ion-button color="light" block (click)="doneApp(accepted)">Yes</button>
+<button ion-button color="light" block (click)="cancelApp()">No</button>
+
+</ion-content>

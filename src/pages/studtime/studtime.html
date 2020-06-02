@@ -1,0 +1,100 @@
+<!--
+  Generated template for the StudtimePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color='primary'>
+    <ion-title>Lecturer Timetable</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+
+    <select [(ngModel)]="name" (change)="filterRule('name', name)">
+        <option value="Asrol Arshad">Asrol Arshad</option>
+        <option value="Albin Lemuel Kushan">Albin Lemuel Kushan</option>
+        <option value="Hafifi Mohd Supir">Hafifi Mohd Supir</option>
+        <option value="Alya Georgiana">Alya Georgiana</option>
+      </select><br><br>
+
+
+      <button *ngIf="name"
+      (click)="removeRule('name')">
+      Remove filter</button><br>
+
+    
+  <ion-list>
+      <ion-item *ngFor="let item of filteredLecturers"><br>
+        <ion-card>
+        <ion-item>
+      
+        <h4>Lecturer Name: {{item.name}}</h4><br>
+          <h3>Monday</h3><br>
+          <p>8-9am: {{item.m8}} - {{item.cm8}}</p>
+          <p>9-10am: {{item.m9}} - {{item.cm9}}</p>
+          <p>10-11am: {{item.m10}} - {{item.cm10}}</p>
+          <p>11-12pm: {{item.m11}} - {{item.cm11}}</p>
+          <p>12-1pm: {{item.m12}} - {{item.cm12}}</p>
+          <p>1-2pm: {{item.m1}} - {{item.cm1}}</p>
+          <p>2-3pm: {{item.m2}} - {{item.cm2}}</p>
+          <p>3-4pm: {{item.m3}} - {{item.cm3}}</p>
+          <p>4-5pm: {{item.m4}} - {{item.cm4}}</p>
+          <p>5-6pm: {{item.m5}} - {{item.cm5}}</p><br>
+    
+          <h3>Tuesday</h3><br>
+          <p>8-9am: {{item.t8}} - {{item.ct8}}</p>
+          <p>9-10am: {{item.t9}} - {{item.ct9}}</p>
+          <p>10-11am: {{item.t10}} - {{item.ct10}}</p>
+          <p>11-12pm: {{item.t11}} - {{item.ct11}}</p>
+          <p>12-1pm: {{item.t12}} - {{item.ct12}}</p>
+          <p>1-2pm: {{item.t1}} - {{item.ct1}}</p>
+          <p>2-3pm: {{item.t2}} - {{item.ct2}}</p>
+          <p>3-4pm: {{item.t3}} - {{item.ct3}}</p>
+          <p>4-5pm: {{item.t4}} - {{item.ct4}}</p>
+          <p>5-6pm: {{item.t5}} - {{item.ct5}}</p><br>
+    
+          <h3>Wednesday</h3><br>
+          <p>8-9am: {{item.w8}} - {{item.cw8}}</p>
+          <p>9-10am: {{item.w9}} - {{item.cw9}}</p>
+          <p>10-11am: {{item.w10}} - {{item.cw10}}</p>
+          <p>11-12pm: {{item.w11}} - {{item.cw11}}</p>
+          <p>12-1pm: {{item.w12}} - {{item.cw12}}</p>
+          <p>1-2pm: {{item.w1}} - {{item.cw1}}</p>
+          <p>2-3pm: {{item.w2}} - {{item.cw2}}</p>
+          <p>3-4pm: {{item.w3}} - {{item.cw3}}</p>
+          <p>4-5pm: {{item.w4}} - {{item.cw4}}</p>
+          <p>5-6pm: {{item.w5}} - {{item.cw5}}</p><br>
+    
+          <h3>Thursday</h3><br>
+          <p>8-9am: {{item.th8}} - {{item.cth8}}</p>
+          <p>9-10am: {{item.th9}} - {{item.cth9}}</p>
+          <p>10-11am: {{item.th10}} - {{item.cth10}}</p>
+          <p>11-12pm: {{item.th11}} - {{item.cth11}}</p>
+          <p>12-1pm: {{item.th12}} - {{item.cth12}}</p>
+          <p>1-2pm: {{item.th1}} - {{item.cth1}}</p>
+          <p>2-3pm: {{item.th2}} - {{item.cth2}}</p>
+          <p>3-4pm: {{item.th3}} - {{item.cth3}}</p>
+          <p>4-5pm: {{item.th4}} - {{item.cth4}}</p>
+          <p>5-6pm: {{item.th5}} - {{item.cth5}}</p><br>
+    
+          <h3>Friday</h3><br>
+          <p>8-9am: {{item.f8}} - {{item.cf8}}</p>
+          <p>9-10am: {{item.f9}} - {{item.cf9}}</p>
+          <p>10-11am: {{item.f10}} - {{item.cf10}}</p>
+          <p>11-12pm: {{item.f11}} - {{item.cf11}}</p>
+          <p>12-1pm: {{item.f12}} - {{item.cf12}}</p>
+          <p>1-2pm: {{item.f1}} - {{item.cf1}}</p>
+          <p>2-3pm: {{item.f2}} - {{item.cf2}}</p>
+          <p>3-4pm: {{item.f3}} - {{item.cf3}}</p>
+          <p>4-5pm: {{item.f4}} - {{item.cf4}}</p>
+          <p>5-6pm: {{item.f5}} - {{item.cf5}}</p><br>
+    
+    
+        </ion-item>
+      </ion-card>
+        </ion-item>
+        </ion-list>
+</ion-content>

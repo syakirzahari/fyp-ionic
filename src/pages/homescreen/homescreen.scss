@@ -1,0 +1,28 @@
+page-homescreen {
+
+  //  ion-content {
+  //      background: #904779 !important;
+  //  }
+
+//  .bg {
+//      background: linear-gradient(to bottom, #D41CF0 0%, #F7EEF9 100%);
+//  }
+
+    .bg-image {
+        background-image: url('../assets/purple3.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #cool-button-div {
+
+      position: relative;
+      width:250px;
+      margin:auto;
+      margin-top:160%;
+  
+  }
+
+
+}

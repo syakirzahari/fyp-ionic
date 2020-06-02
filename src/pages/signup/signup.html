@@ -1,0 +1,37 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color='primary'>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+          <ion-label floating>Email</ion-label>
+          <ion-input type="text" [(ngModel)]="user.email" value=""></ion-input>
+        </ion-item>
+      
+        <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password" [(ngModel)]="user.password" value=""></ion-input>
+        </ion-item>
+      </ion-list><br>
+      
+      <div padding>
+        
+        <button ion-button color="light" block (click)="signup(user)">Register</button><br>
+      </div>
+
+      <p>UiTM Student need to register using isiswa email provided by the university.<br><br></p>
+      <p>Example: 2016123456@isiswa.uitm.edu.my</p>
+
+</ion-content>

@@ -1,0 +1,20 @@
+<ion-header no-border>
+    <ion-navbar color='primary'>
+      <img src="assets/ctn.png" class="navbarLogo"/><ion-title center text-center>Home</ion-title>
+    </ion-navbar>
+</ion-header>
+  
+  
+  <ion-content fullscreen>
+
+      <h3 center text-center>Welcome, {{(profileData | async)?.name}}</h3><br><br>
+
+      <img src="assets/app1.jpg" length="120" width="700" (click)="statpage()"><br><br>
+      <img src="assets/app2.jpg" length="120" width="700" (click)="hist1page()"><br><br>
+      <img src="assets/app3.jpg" length="120" width="700" (click)="timepage()"><br><br>
+      <img src="assets/app4.jpg" length="120" width="700" (click)="profpage()"><br><br>
+
+   
+  </ion-content>
+
+  

@@ -1,0 +1,736 @@
+<!--
+  Generated template for the EdittimePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color='primary'>
+    <ion-title>Edit Timetable</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+     <ion-item>
+         <ion-label floating>Name</ion-label>
+         <ion-input type="text" value="" [(ngModel)]="timetable.name"></ion-input>
+     </ion-item>
+
+     <h4>Monday</h4>
+
+  <ion-item class="select-service">
+     <ion-label>8-9am</ion-label><br>
+     <ion-select multiple="false" [(ngModel)]="timetable.m8" required>
+       <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+     </ion-select>
+   </ion-item>
+
+   <ion-item class="select-service">
+    <ion-label>Group</ion-label><br>
+    <ion-select multiple="false" [(ngModel)]="timetable.cm8" required>
+      <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+    </ion-select>
+  </ion-item><br>
+
+   <ion-item class="select-service">
+       <ion-label>9-10am</ion-label><br>
+       <ion-select multiple="false" [(ngModel)]="timetable.m9" required>
+         <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+       </ion-select>
+     </ion-item>
+
+     <ion-item class="select-service">
+      <ion-label>Group</ion-label><br>
+      <ion-select multiple="false" [(ngModel)]="timetable.cm9" required>
+        <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+      </ion-select>
+    </ion-item><br>
+
+     <ion-item class="select-service">
+         <ion-label>10-11am</ion-label><br>
+         <ion-select multiple="false" [(ngModel)]="timetable.m10" required>
+           <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+         </ion-select>
+       </ion-item>
+
+       <ion-item class="select-service">
+        <ion-label>Group</ion-label><br>
+        <ion-select multiple="false" [(ngModel)]="timetable.cm10" required>
+          <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+        </ion-select>
+      </ion-item><br>
+
+       <ion-item class="select-service">
+           <ion-label>11-12pm</ion-label><br>
+           <ion-select multiple="false" [(ngModel)]="timetable.m11" required>
+             <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+           </ion-select>
+         </ion-item>
+
+         <ion-item class="select-service">
+          <ion-label>Group</ion-label><br>
+          <ion-select multiple="false" [(ngModel)]="timetable.cm11" required>
+            <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+          </ion-select>
+        </ion-item><br>
+
+         <ion-item class="select-service">
+             <ion-label>12-1pm</ion-label><br>
+             <ion-select multiple="false" [(ngModel)]="timetable.m12" required>
+               <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+             </ion-select>
+           </ion-item>
+
+           <ion-item class="select-service">
+            <ion-label>Group</ion-label><br>
+            <ion-select multiple="false" [(ngModel)]="timetable.cm12" required>
+              <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+            </ion-select>
+          </ion-item><br>
+
+           <ion-item class="select-service">
+               <ion-label>1-2pm</ion-label><br>
+               <ion-select multiple="false" [(ngModel)]="timetable.m1" required>
+                 <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+               </ion-select>
+             </ion-item>
+
+             <ion-item class="select-service">
+              <ion-label>Group</ion-label><br>
+              <ion-select multiple="false" [(ngModel)]="timetable.cm1" required>
+                <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+              </ion-select>
+            </ion-item><br>
+       
+             <ion-item class="select-service">
+                 <ion-label>2-3pm</ion-label><br>
+                 <ion-select multiple="false" [(ngModel)]="timetable.m2" required>
+                   <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                 </ion-select>
+               </ion-item>
+
+               <ion-item class="select-service">
+                <ion-label>Group</ion-label><br>
+                <ion-select multiple="false" [(ngModel)]="timetable.cm2" required>
+                  <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                </ion-select>
+              </ion-item><br>
+       
+               <ion-item class="select-service">
+                   <ion-label>3-4pm</ion-label><br>
+                   <ion-select multiple="false" [(ngModel)]="timetable.m3" required>
+                     <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                   </ion-select>
+                 </ion-item>
+
+                 <ion-item class="select-service">
+                  <ion-label>Group</ion-label><br>
+                  <ion-select multiple="false" [(ngModel)]="timetable.cm3" required>
+                    <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                  </ion-select>
+                </ion-item><br>
+       
+                 <ion-item class="select-service">
+                     <ion-label>4-5pm</ion-label><br>
+                     <ion-select multiple="false" [(ngModel)]="timetable.m4" required>
+                       <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                     </ion-select>
+                   </ion-item>
+
+                   <ion-item class="select-service">
+                    <ion-label>Group</ion-label><br>
+                    <ion-select multiple="false" [(ngModel)]="timetable.cm4" required>
+                      <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                    </ion-select>
+                  </ion-item><br>
+       
+                   <ion-item class="select-service">
+                       <ion-label>5-6pm</ion-label><br>
+                       <ion-select multiple="false" [(ngModel)]="timetable.m5" required>
+                         <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                       </ion-select>
+                     </ion-item>
+
+                     <ion-item class="select-service">
+                      <ion-label>Group</ion-label><br>
+                      <ion-select multiple="false" [(ngModel)]="timetable.cm5" required>
+                        <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                      </ion-select>
+                    </ion-item><br>
+
+   <h4>Tuesday</h4>
+
+   <ion-item class="select-service">
+       <ion-label>8-9am</ion-label><br>
+       <ion-select multiple="false" [(ngModel)]="timetable.t8" required>
+         <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+       </ion-select>
+     </ion-item>
+
+     <ion-item class="select-service">
+      <ion-label>Group</ion-label><br>
+      <ion-select multiple="false" [(ngModel)]="timetable.ct8" required>
+        <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+      </ion-select>
+    </ion-item><br>
+
+     <ion-item class="select-service">
+         <ion-label>9-10am</ion-label><br>
+         <ion-select multiple="false" [(ngModel)]="timetable.t9" required>
+           <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+         </ion-select>
+       </ion-item>
+
+       <ion-item class="select-service">
+        <ion-label>Group</ion-label><br>
+        <ion-select multiple="false" [(ngModel)]="timetable.ct9" required>
+          <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+        </ion-select>
+      </ion-item><br>
+
+       <ion-item class="select-service">
+           <ion-label>10-11am</ion-label><br>
+           <ion-select multiple="false" [(ngModel)]="timetable.t10" required>
+             <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+           </ion-select>
+         </ion-item>
+
+         <ion-item class="select-service">
+          <ion-label>Group</ion-label><br>
+          <ion-select multiple="false" [(ngModel)]="timetable.ct10" required>
+            <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+          </ion-select>
+        </ion-item><br>
+
+         <ion-item class="select-service">
+             <ion-label>11-12pm</ion-label><br>
+             <ion-select multiple="false" [(ngModel)]="timetable.t11" required>
+               <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+             </ion-select>
+           </ion-item>
+
+           <ion-item class="select-service">
+            <ion-label>Group</ion-label><br>
+            <ion-select multiple="false" [(ngModel)]="timetable.ct11" required>
+              <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+            </ion-select>
+          </ion-item><br>
+
+           <ion-item class="select-service">
+               <ion-label>12-1pm</ion-label><br>
+               <ion-select multiple="false" [(ngModel)]="timetable.t12" required>
+                 <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+               </ion-select>
+             </ion-item>
+
+             <ion-item class="select-service">
+              <ion-label>Group</ion-label><br>
+              <ion-select multiple="false" [(ngModel)]="timetable.ct12" required>
+                <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+              </ion-select>
+            </ion-item><br>
+
+             <ion-item class="select-service">
+                 <ion-label>1-2pm</ion-label><br>
+                 <ion-select multiple="false" [(ngModel)]="timetable.t1" required>
+                   <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                 </ion-select>
+               </ion-item>
+
+               <ion-item class="select-service">
+                <ion-label>Group</ion-label><br>
+                <ion-select multiple="false" [(ngModel)]="timetable.ct1" required>
+                  <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                </ion-select>
+              </ion-item><br>
+         
+               <ion-item class="select-service">
+                   <ion-label>2-3pm</ion-label><br>
+                   <ion-select multiple="false" [(ngModel)]="timetable.t2" required>
+                     <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                   </ion-select>
+                 </ion-item>
+
+                 <ion-item class="select-service">
+                  <ion-label>Group</ion-label><br>
+                  <ion-select multiple="false" [(ngModel)]="timetable.ct2" required>
+                    <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                  </ion-select>
+                </ion-item><br>
+         
+                 <ion-item class="select-service">
+                     <ion-label>3-4pm</ion-label><br>
+                     <ion-select multiple="false" [(ngModel)]="timetable.t3" required>
+                       <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                     </ion-select>
+                   </ion-item>
+
+                   <ion-item class="select-service">
+                    <ion-label>Group</ion-label><br>
+                    <ion-select multiple="false" [(ngModel)]="timetable.ct3" required>
+                      <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                    </ion-select>
+                  </ion-item><br>
+         
+                   <ion-item class="select-service">
+                       <ion-label>4-5pm</ion-label><br>
+                       <ion-select multiple="false" [(ngModel)]="timetable.t4" required>
+                         <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                       </ion-select>
+                     </ion-item>
+
+                     <ion-item class="select-service">
+                      <ion-label>Group</ion-label><br>
+                      <ion-select multiple="false" [(ngModel)]="timetable.ct4" required>
+                        <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                      </ion-select>
+                    </ion-item><br>
+
+                     <ion-item class="select-service">
+                         <ion-label>5-6pm</ion-label><br>
+                         <ion-select multiple="false" [(ngModel)]="timetable.t5" required>
+                           <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                         </ion-select>
+                       </ion-item>
+
+                       <ion-item class="select-service">
+                        <ion-label>Group</ion-label><br>
+                        <ion-select multiple="false" [(ngModel)]="timetable.ct5" required>
+                          <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                        </ion-select>
+                      </ion-item><br>
+         
+    <h4>Wednesday</h4>
+
+    <ion-item class="select-service">
+       <ion-label>8-9am</ion-label><br>
+       <ion-select multiple="false" [(ngModel)]="timetable.w8" required>
+         <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+       </ion-select>
+     </ion-item>
+
+     <ion-item class="select-service">
+      <ion-label>Group</ion-label><br>
+      <ion-select multiple="false" [(ngModel)]="timetable.cw8" required>
+        <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+      </ion-select>
+    </ion-item><br>
+
+     <ion-item class="select-service">
+         <ion-label>9-10am</ion-label><br>
+         <ion-select multiple="false" [(ngModel)]="timetable.w9" required>
+           <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+         </ion-select>
+       </ion-item>
+
+       <ion-item class="select-service">
+        <ion-label>Group</ion-label><br>
+        <ion-select multiple="false" [(ngModel)]="timetable.cw9" required>
+          <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+        </ion-select>
+      </ion-item><br>
+
+       <ion-item class="select-service">
+           <ion-label>10-11am</ion-label><br>
+           <ion-select multiple="false" [(ngModel)]="timetable.w10" required>
+             <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+           </ion-select>
+         </ion-item>
+
+         <ion-item class="select-service">
+          <ion-label>Group</ion-label><br>
+          <ion-select multiple="false" [(ngModel)]="timetable.cw10" required>
+            <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+          </ion-select>
+        </ion-item><br>
+
+         <ion-item class="select-service">
+             <ion-label>11-12pm</ion-label><br>
+             <ion-select multiple="false" [(ngModel)]="timetable.w11" required>
+               <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+             </ion-select>
+           </ion-item>
+
+           <ion-item class="select-service">
+            <ion-label>Group</ion-label><br>
+            <ion-select multiple="false" [(ngModel)]="timetable.cw11" required>
+              <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+            </ion-select>
+          </ion-item><br>
+
+           <ion-item class="select-service">
+               <ion-label>12-1pm</ion-label><br>
+               <ion-select multiple="false" [(ngModel)]="timetable.w12" required>
+                 <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+               </ion-select>
+             </ion-item>
+
+             <ion-item class="select-service">
+              <ion-label>Group</ion-label><br>
+              <ion-select multiple="false" [(ngModel)]="timetable.cw12" required>
+                <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+              </ion-select>
+            </ion-item><br>
+
+             <ion-item class="select-service">
+                 <ion-label>1-2pm</ion-label><br>
+                 <ion-select multiple="false" [(ngModel)]="timetable.w1" required>
+                   <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                 </ion-select>
+               </ion-item>
+
+               <ion-item class="select-service">
+                <ion-label>Group</ion-label><br>
+                <ion-select multiple="false" [(ngModel)]="timetable.cw1" required>
+                  <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                </ion-select>
+              </ion-item><br>
+         
+               <ion-item class="select-service">
+                   <ion-label>2-3pm</ion-label><br>
+                   <ion-select multiple="false" [(ngModel)]="timetable.w2" required>
+                     <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                   </ion-select>
+                 </ion-item>
+
+                 <ion-item class="select-service">
+                  <ion-label>Group</ion-label><br>
+                  <ion-select multiple="false" [(ngModel)]="timetable.cw2" required>
+                    <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                  </ion-select>
+                </ion-item><br>
+         
+                 <ion-item class="select-service">
+                     <ion-label>3-4pm</ion-label><br>
+                     <ion-select multiple="false" [(ngModel)]="timetable.w3" required>
+                       <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                     </ion-select>
+                   </ion-item>
+
+                   <ion-item class="select-service">
+                    <ion-label>Group</ion-label><br>
+                    <ion-select multiple="false" [(ngModel)]="timetable.cw3" required>
+                      <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                    </ion-select>
+                  </ion-item><br>
+         
+                   <ion-item class="select-service">
+                       <ion-label>4-5pm</ion-label><br>
+                       <ion-select multiple="false" [(ngModel)]="timetable.w4" required>
+                         <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                       </ion-select>
+                     </ion-item>
+
+                     <ion-item class="select-service">
+                      <ion-label>Group</ion-label><br>
+                      <ion-select multiple="false" [(ngModel)]="timetable.cw4" required>
+                        <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                      </ion-select>
+                    </ion-item><br>
+         
+                     <ion-item class="select-service">
+                         <ion-label>5-6pm</ion-label><br>
+                         <ion-select multiple="false" [(ngModel)]="timetable.w5" required>
+                           <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                         </ion-select>
+                       </ion-item>
+
+                       <ion-item class="select-service">
+                        <ion-label>Group</ion-label><br>
+                        <ion-select multiple="false" [(ngModel)]="timetable.cw5" required>
+                          <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                        </ion-select>
+                      </ion-item><br>
+
+     <h4>Thursday</h4>
+
+     <ion-item class="select-service">
+         <ion-label>8-9am</ion-label><br>
+         <ion-select multiple="false" [(ngModel)]="timetable.th8" required>
+           <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+         </ion-select>
+       </ion-item>
+
+       <ion-item class="select-service">
+        <ion-label>Group</ion-label><br>
+        <ion-select multiple="false" [(ngModel)]="timetable.cth8" required>
+          <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+        </ion-select>
+      </ion-item><br>
+ 
+       <ion-item class="select-service">
+           <ion-label>9-10am</ion-label><br>
+           <ion-select multiple="false" [(ngModel)]="timetable.th9" required>
+             <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+           </ion-select>
+         </ion-item>
+
+         <ion-item class="select-service">
+          <ion-label>Group</ion-label><br>
+          <ion-select multiple="false" [(ngModel)]="timetable.cth9" required>
+            <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+          </ion-select>
+        </ion-item><br>
+ 
+         <ion-item class="select-service">
+             <ion-label>10-11am</ion-label><br>
+             <ion-select multiple="false" [(ngModel)]="timetable.th10" required>
+               <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+             </ion-select>
+           </ion-item>
+
+           <ion-item class="select-service">
+            <ion-label>Group</ion-label><br>
+            <ion-select multiple="false" [(ngModel)]="timetable.cth10" required>
+              <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+            </ion-select>
+          </ion-item><br>
+ 
+           <ion-item class="select-service">
+               <ion-label>11-12pm</ion-label><br>
+               <ion-select multiple="false" [(ngModel)]="timetable.th11" required>
+                 <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+               </ion-select>
+             </ion-item>
+
+             <ion-item class="select-service">
+              <ion-label>Group</ion-label><br>
+              <ion-select multiple="false" [(ngModel)]="timetable.cth11" required>
+                <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+              </ion-select>
+            </ion-item><br>
+ 
+             <ion-item class="select-service">
+                 <ion-label>12-1pm</ion-label><br>
+                 <ion-select multiple="false" [(ngModel)]="timetable.th12" required>
+                   <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                 </ion-select>
+               </ion-item>
+
+               <ion-item class="select-service">
+                <ion-label>Group</ion-label><br>
+                <ion-select multiple="false" [(ngModel)]="timetable.cth12" required>
+                  <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                </ion-select>
+              </ion-item><br>
+ 
+               <ion-item class="select-service">
+                   <ion-label>1-2pm</ion-label><br>
+                   <ion-select multiple="false" [(ngModel)]="timetable.th1" required>
+                     <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                   </ion-select>
+                 </ion-item>
+
+                 <ion-item class="select-service">
+                  <ion-label>Group</ion-label><br>
+                  <ion-select multiple="false" [(ngModel)]="timetable.cth1" required>
+                    <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                  </ion-select>
+                </ion-item><br>
+           
+                 <ion-item class="select-service">
+                     <ion-label>2-3pm</ion-label><br>
+                     <ion-select multiple="false" [(ngModel)]="timetable.th2" required>
+                       <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                     </ion-select>
+                   </ion-item>
+
+                   <ion-item class="select-service">
+                    <ion-label>Group</ion-label><br>
+                    <ion-select multiple="false" [(ngModel)]="timetable.cth2" required>
+                      <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                    </ion-select>
+                  </ion-item><br>
+           
+                   <ion-item class="select-service">
+                       <ion-label>3-4pm</ion-label><br>
+                       <ion-select multiple="false" [(ngModel)]="timetable.th3" required>
+                         <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                       </ion-select>
+                     </ion-item>
+
+                     <ion-item class="select-service">
+                      <ion-label>Group</ion-label><br>
+                      <ion-select multiple="false" [(ngModel)]="timetable.cth3" required>
+                        <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                      </ion-select>
+                    </ion-item><br>
+           
+                     <ion-item class="select-service">
+                         <ion-label>4-5pm</ion-label><br>
+                         <ion-select multiple="false" [(ngModel)]="timetable.th4" required>
+                           <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                         </ion-select>
+                       </ion-item>
+
+                       <ion-item class="select-service">
+                        <ion-label>Group</ion-label><br>
+                        <ion-select multiple="false" [(ngModel)]="timetable.cth4" required>
+                          <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                        </ion-select>
+                      </ion-item><br>
+           
+                       <ion-item class="select-service">
+                           <ion-label>5-6pm</ion-label><br>
+                           <ion-select multiple="false" [(ngModel)]="timetable.th5" required>
+                             <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                           </ion-select>
+                         </ion-item>
+
+                         <ion-item class="select-service">
+                          <ion-label>Group</ion-label><br>
+                          <ion-select multiple="false" [(ngModel)]="timetable.cth5" required>
+                            <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                          </ion-select>
+                        </ion-item><br>
+      <h4>Friday</h4>
+
+      <ion-item class="select-service">
+         <ion-label>8-9am</ion-label><br>
+         <ion-select multiple="false" [(ngModel)]="timetable.f8" required>
+           <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+         </ion-select>
+       </ion-item>
+
+       <ion-item class="select-service">
+        <ion-label>Group</ion-label><br>
+        <ion-select multiple="false" [(ngModel)]="timetable.cf8" required>
+          <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+        </ion-select>
+      </ion-item><br>
+ 
+       <ion-item class="select-service">
+           <ion-label>9-10am</ion-label><br>
+           <ion-select multiple="false" [(ngModel)]="timetable.f9" required>
+             <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+           </ion-select>
+         </ion-item>
+
+         <ion-item class="select-service">
+          <ion-label>Group</ion-label><br>
+          <ion-select multiple="false" [(ngModel)]="timetable.cf9" required>
+            <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+          </ion-select>
+        </ion-item><br>
+ 
+         <ion-item class="select-service">
+             <ion-label>10-11am</ion-label><br>
+             <ion-select multiple="false" [(ngModel)]="timetable.f10" required>
+               <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+             </ion-select>
+           </ion-item>
+
+           <ion-item class="select-service">
+            <ion-label>Group</ion-label><br>
+            <ion-select multiple="false" [(ngModel)]="timetable.cf10" required>
+              <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+            </ion-select>
+          </ion-item><br>
+ 
+           <ion-item class="select-service">
+               <ion-label>11-12pm</ion-label><br>
+               <ion-select multiple="false" [(ngModel)]="timetable.f11" required>
+                 <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+               </ion-select>
+             </ion-item>
+
+             <ion-item class="select-service">
+              <ion-label>Group</ion-label><br>
+              <ion-select multiple="false" [(ngModel)]="timetable.cf11" required>
+                <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+              </ion-select>
+            </ion-item><br>
+ 
+             <ion-item class="select-service">
+                 <ion-label>12-1pm</ion-label><br>
+                 <ion-select multiple="false" [(ngModel)]="timetable.f12" required>
+                   <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                 </ion-select>
+               </ion-item>
+
+               <ion-item class="select-service">
+                <ion-label>Group</ion-label><br>
+                <ion-select multiple="false" [(ngModel)]="timetable.cf12" required>
+                  <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                </ion-select>
+              </ion-item><br>
+ 
+               <ion-item class="select-service">
+                   <ion-label>1-2pm</ion-label><br>
+                   <ion-select multiple="false" [(ngModel)]="timetable.f1" required>
+                     <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                   </ion-select>
+                 </ion-item>
+
+                 <ion-item class="select-service">
+                  <ion-label>Group</ion-label><br>
+                  <ion-select multiple="false" [(ngModel)]="timetable.cf1" required>
+                    <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                  </ion-select>
+                </ion-item><br>
+           
+                 <ion-item class="select-service">
+                     <ion-label>2-3pm</ion-label><br>
+                     <ion-select multiple="false" [(ngModel)]="timetable.f2" required>
+                       <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                     </ion-select>
+                   </ion-item>
+
+                   <ion-item class="select-service">
+                    <ion-label>Group</ion-label><br>
+                    <ion-select multiple="false" [(ngModel)]="timetable.cf2" required>
+                      <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                    </ion-select>
+                  </ion-item><br>
+           
+                   <ion-item class="select-service">
+                       <ion-label>3-4pm</ion-label><br>
+                       <ion-select multiple="false" [(ngModel)]="timetable.f3" required>
+                         <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                       </ion-select>
+                     </ion-item>
+
+                     <ion-item class="select-service">
+                      <ion-label>Group</ion-label><br>
+                      <ion-select multiple="false" [(ngModel)]="timetable.cf3" required>
+                        <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                      </ion-select>
+                    </ion-item><br>
+           
+                     <ion-item class="select-service">
+                         <ion-label>4-5pm</ion-label><br>
+                         <ion-select multiple="false" [(ngModel)]="timetable.f4" required>
+                           <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                         </ion-select>
+                       </ion-item>
+
+                       <ion-item class="select-service">
+                        <ion-label>Group</ion-label><br>
+                        <ion-select multiple="false" [(ngModel)]="timetable.cf4" required>
+                          <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                        </ion-select>
+                      </ion-item><br>
+           
+                       <ion-item class="select-service">
+                           <ion-label>5-6pm</ion-label><br>
+                           <ion-select multiple="false" [(ngModel)]="timetable.f5" required>
+                             <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}}</ion-option>
+                           </ion-select>
+                         </ion-item>
+
+                         <ion-item class="select-service">
+                          <ion-label>Group</ion-label><br>
+                          <ion-select multiple="false" [(ngModel)]="timetable.cf5" required>
+                            <ion-option *ngFor="let item of groupListRef$ | async">{{item.name}}</ion-option>
+                          </ion-select>
+                        </ion-item><br>
+    <div padding>
+      <button ion-button color="light" block (click)="updateTime()">Update</button>
+    </div>
+
+</ion-content>

@@ -1,0 +1,53 @@
+page-slide {
+    #style {
+
+        position: relative;
+        width:250px;
+        margin:auto;
+        margin-top:50%;
+    
+    }
+
+    #style1 {
+
+        position: relative;
+        margin:auto;
+        margin-top:150%;
+    
+    }
+
+    #style2 {
+        color:black;
+    }
+
+    #style3 {
+
+        position: relative;
+        margin:auto;
+        margin-top:120%;
+    
+    }
+
+    .bg-image {
+        background-image: url('../assets/day.jpg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 250%;
+
+    }
+
+    .bg-image1 {
+        background-image: url('../assets/reminder.jpg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 200%;
+    }
+
+    .bg-image2 {
+        background-image: url('../assets/white1.jpg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 300%;
+    }
+
+}

@@ -1,0 +1,45 @@
+
+
+<ion-content padding center text-center>
+
+    <ion-buttons end><button ion-button (click)="closePage()">X</button></ion-buttons>
+  
+  <ion-card>
+    <br>
+    <br>
+  <img src="assets/gg.png">
+  <br>
+  <ion-title>
+    <h2 allign="justify">Student E-Consultation</h2>
+    </ion-title>
+  </ion-card>
+
+
+
+
+<ion-list>
+  <ion-item>
+    <ion-label floating>Student ID</ion-label>
+    <ion-input type="text" [(ngModel)]="user.email" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="user.password" value="" ></ion-input>
+  </ion-item>
+</ion-list><br>
+
+
+
+<div padding>
+  <button ion-button color="primary" block (click)="depan(user)">Log-in</button>
+  <button ion-button color="light" block (click)="signup()">New Here?Register</button>
+</div><br><br><br>
+
+
+
+<button ion-button clear block (click)="reset()">Forgot Password?Click Here</button>
+
+
+
+</ion-content>

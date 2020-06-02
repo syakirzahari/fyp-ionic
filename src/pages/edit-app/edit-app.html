@@ -1,0 +1,78 @@
+<!--
+  Generated template for the EditAppPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color='primary'>
+    <ion-title>Update Appointment Status</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label>Name</ion-label>
+    <ion-input type="text" value="" [(ngModel)]="appointment.name" disabled></ion-input>
+</ion-item>
+
+<ion-item>
+    <ion-label>Group</ion-label>
+    <ion-input type="integer" value=""  [(ngModel)]="appointment.group" disabled></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label>Reason</ion-label>
+  <ion-textarea [(ngModel)]="appointment.notes" disabled></ion-textarea>
+</ion-item>
+
+<ion-item class="select-service">
+    <ion-label>Course Code</ion-label><br>
+    <ion-select multiple="false" [(ngModel)]="appointment.code" disabled>
+      <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}} - {{item.name}}</ion-option>
+    </ion-select>
+  </ion-item><br>
+
+  <ion-item class="select-service">
+      <ion-label>Lecturer</ion-label>
+      <ion-select multiple="false" [(ngModel)]="appointment.lecturer" disabled>
+        <ion-option *ngFor="let item of lecturerListRef$ | async">{{item.name}} - {{item.program}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+  <ion-row>
+      <ion-col width-50 class="datepicker-column">
+          <ion-label>
+            <ion-icon name="calendar"></ion-icon>
+            <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="appointment.date"></ion-datetime>
+          </ion-label>
+        </ion-col>
+      <ion-col width-50 class="datepicker-column">
+        <ion-label>
+          <ion-icon name="time"></ion-icon>
+          <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="appointment.time"></ion-datetime>
+        </ion-label>
+      </ion-col> 
+    </ion-row>
+
+
+  
+    <ion-item>
+        <ion-label>Update Status</ion-label>
+        <ion-select placeholder="Select One" [(ngModel)]="appointment.status">
+          <ion-option value="Accepted">Accepted</ion-option>
+          <ion-option value="Rejected">Rejected</ion-option>
+        </ion-select>
+      </ion-item>
+    
+   
+   <div padding>
+     <button ion-button color="light" block (click)="updateApp1(appointment)">Update</button>
+   </div>
+
+
+</ion-content>

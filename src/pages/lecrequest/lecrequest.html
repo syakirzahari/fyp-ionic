@@ -1,0 +1,52 @@
+<ion-header no-border>
+    <ion-navbar color='primary'>
+      <ion-title>Request Account</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content center text-center><br>
+
+  <ion-item>
+    <ion-label>Name</ion-label>
+    <ion-input type="text" value="" [(ngModel)]="request.name" ></ion-input>
+</ion-item><br>
+
+<ion-item>
+    <ion-label>Lecturer ID</ion-label>
+    <ion-input type="integer" value=""  [(ngModel)]="request.id" ></ion-input>
+</ion-item><br>
+
+
+<ion-item>
+  <ion-label>Email</ion-label>
+  <ion-input type="text" value=""  [(ngModel)]="request.email" ></ion-input>
+</ion-item><br>
+
+<ion-item class="select-service">
+  <ion-label>Preferred Subject</ion-label><br>
+  <ion-select multiple="false" [(ngModel)]="request.preferred" required>
+    <ion-option *ngFor="let item of subjectListRef$ | async">{{item.code}} - {{item.name}}</ion-option>
+  </ion-select>
+</ion-item><br>
+
+
+
+<ion-item>
+  <ion-label>Password</ion-label>
+  <ion-input type="password" [(ngModel)]="request.pass"></ion-input>
+</ion-item><br>
+
+<ion-row class="center">
+    <button ion-button (click)="getPicture(0)">Upload Your Lecturer ID Card</button>  
+</ion-row>
+<ion-card>
+  <img [src]="captureDataUrl" *ngIf="captureDataUrl" [(ngModel)}="request.image"/>
+</ion-card>
+    
+     
+<div padding>
+  <button ion-button color="light" block (click)="addAcc(request)">Request</button>
+</div>
+
+</ion-content>

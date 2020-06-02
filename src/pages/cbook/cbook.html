@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar color='primary'>
+    <ion-title>Consultation Request</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <div>
+  <ion-list>
+  <ion-item *ngFor="let item of appointmentRef$ | async" 
+    detail-push navPush="EditAppPage" [navParams]="{appointment: item}"> 
+    <h3>STUDENT NAME: {{item.name}}</h3>
+    <h3>GROUP: {{item.group}} </h3>
+    <h3>LECTURER NAME: {{item.lecturer}}</h3>
+    <h3>COURSE CODE: {{item.code}} </h3>
+    <h3>DATE: {{item.date}}</h3>
+    <h3>TIME: {{item.time}} </h3>
+    <h3>REASON: {{item.notes}}</h3>
+    <h3>STATUS: {{item.status}}</h3><br><br>
+   </ion-item>
+</ion-list>
+</div>
+</ion-content>

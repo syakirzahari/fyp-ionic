@@ -1,0 +1,84 @@
+<!--
+  Generated template for the ViewPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color='primary'>
+    <ion-title>Manage Timetable</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <button ion-button color="danger" (click)="openPage()" class="button button-dark customBtn">Change View</button><br>
+    
+    <h4>Lecturer Name: {{(timetableData | async)?.name}}</h4><br>
+      <h3>Monday</h3><br>
+      <p>8-9am: {{(timetableData | async)?.m8}} - {{(timetableData | async)?.cm8}}</p>
+      <p>9-10am: {{(timetableData | async)?.m9}} - {{(timetableData | async)?.cm9}}</p>
+      <p>10-11am: {{(timetableData | async)?.m10}} - {{(timetableData | async)?.cm10}}</p>
+      <p>11-12pm: {{(timetableData | async)?.m11}}  - {{(timetableData | async)?.cm11}}</p>
+      <p>12-1pm: {{(timetableData | async)?.m12}} - {{(timetableData | async)?.cm12}}</p>
+      <p>1-2pm: {{(timetableData | async)?.m1}} - {{(timetableData | async)?.cm1}}</p>
+      <p>2-3pm: {{(timetableData | async)?.m2}} - {{(timetableData | async)?.cm2}}</p>
+      <p>3-4pm: {{(timetableData | async)?.m3}} - {{(timetableData | async)?.cm3}}</p>
+      <p>4-5pm: {{(timetableData | async)?.m4}} - {{(timetableData | async)?.cm4}}</p>
+      <p>5-6pm: {{(timetableData | async)?.m5}} - {{(timetableData | async)?.cm5}}</p><br>
+
+      <h3>Tuesday</h3><br>
+      <p>8-9am: {{(timetableData | async)?.t8}} - {{(timetableData | async)?.ct8}}</p>
+      <p>9-10am: {{(timetableData | async)?.t9}} - {{(timetableData | async)?.ct9}}</p>
+      <p>10-11am: {{(timetableData | async)?.t10}} - {{(timetableData | async)?.ct10}}</p>
+      <p>11-12pm: {{(timetableData | async)?.t11}} - {{(timetableData | async)?.ct11}}</p>
+      <p>12-1pm: {{(timetableData | async)?.t12}} - {{(timetableData | async)?.ct12}}</p>
+      <p>1-2pm: {{(timetableData | async)?.t1}} - {{(timetableData | async)?.ct1}}</p>
+      <p>2-3pm: {{(timetableData | async)?.t2}} - {{(timetableData | async)?.ct2}}</p>
+      <p>3-4pm: {{(timetableData | async)?.t3}} - {{(timetableData | async)?.ct3}}</p>
+      <p>4-5pm: {{(timetableData | async)?.t4}} - {{(timetableData | async)?.ct4}}</p>
+      <p>5-6pm: {{(timetableData | async)?.t5}} - {{(timetableData | async)?.ct5}}</p><br>
+
+      <h3>Wednesday</h3><br>
+      <p>8-9am: {{(timetableData | async)?.w8}} - {{(timetableData | async)?.cw8}}</p>
+      <p>9-10am: {{(timetableData | async)?.w9}} - {{(timetableData | async)?.cw9}}</p>
+      <p>10-11am: {{(timetableData | async)?.w10}} - {{(timetableData | async)?.cw10}}</p>
+      <p>11-12pm: {{(timetableData | async)?.w11}} - {{(timetableData | async)?.cw11}}</p>
+      <p>12-1pm: {{(timetableData | async)?.w12}} - {{(timetableData | async)?.cw12}}</p>
+      <p>1-2pm: {{(timetableData | async)?.w1}} - {{(timetableData | async)?.cw1}}</p>
+      <p>2-3pm: {{(timetableData | async)?.w2}} - {{(timetableData | async)?.cw2}}</p>
+      <p>3-4pm: {{(timetableData | async)?.w3}} - {{(timetableData | async)?.cw3}}</p>
+      <p>4-5pm: {{(timetableData | async)?.w4}} - {{(timetableData | async)?.cw4}}</p>
+      <p>5-6pm: {{(timetableData | async)?.w5}} - {{(timetableData | async)?.cw5}}</p><br>
+
+      <h3>Thursday</h3><br>
+      <p>8-9am: {{(timetableData | async)?.th8}} - {{(timetableData | async)?.cth8}}</p>
+      <p>9-10am: {{(timetableData | async)?.th9}} - {{(timetableData | async)?.cth9}}</p>
+      <p>10-11am: {{(timetableData | async)?.th10}} - {{(timetableData | async)?.cth10}}</p>
+      <p>11-12pm: {{(timetableData | async)?.th11}} - {{(timetableData | async)?.cth11}}</p>
+      <p>12-1pm: {{(timetableData | async)?.th12}} - {{(timetableData | async)?.cth12}}</p>
+      <p>1-2pm: {{(timetableData | async)?.th1}} - {{(timetableData | async)?.cth1}}</p>
+      <p>2-3pm: {{(timetableData | async)?.th2}} - {{(timetableData | async)?.cth2}}</p>
+      <p>3-4pm: {{(timetableData | async)?.th3}} - {{(timetableData | async)?.cth3}}</p>
+      <p>4-5pm: {{(timetableData | async)?.th4}} - {{(timetableData | async)?.cth4}}</p>
+      <p>5-6pm: {{(timetableData | async)?.th5}} - {{(timetableData | async)?.cth5}}</p><br>
+
+      <h3>Friday</h3><br>
+      <p>8-9am: {{(timetableData | async)?.f8}} - {{(timetableData | async)?.cf8}}</p>
+      <p>9-10am: {{(timetableData | async)?.f9}} - {{(timetableData | async)?.cf9}}</p>
+      <p>10-11am: {{(timetableData | async)?.f10}} - {{(timetableData | async)?.cf10}}</p>
+      <p>11-12pm: {{(timetableData | async)?.f11}} - {{(timetableData | async)?.cf11}}</p>
+      <p>12-1pm: {{(timetableData | async)?.f12}} - {{(timetableData | async)?.cf12}}</p>
+      <p>1-2pm: {{(timetableData | async)?.f1}} - {{(timetableData | async)?.cf1}}</p>
+      <p>2-3pm: {{(timetableData | async)?.f2}} - {{(timetableData | async)?.cf2}}</p>
+      <p>3-4pm: {{(timetableData | async)?.f3}} - {{(timetableData | async)?.cf3}}</p>
+      <p>4-5pm: {{(timetableData | async)?.f4}} - {{(timetableData | async)?.cf4}}</p>
+      <p>5-6pm: {{(timetableData | async)?.f5}} - {{(timetableData | async)?.cf5}}</p><br>
+
+
+      <div  id="cool-button-div"> 
+          <button ion-button primary (click)="editTime()">Edit Timetable</button><br><br>
+        </div>
+</ion-content>

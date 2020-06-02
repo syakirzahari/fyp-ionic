@@ -1,0 +1,54 @@
+<!--
+  Generated template for the EditprofilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Edit Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding="allign">
+
+
+     <ion-item>
+         <ion-label floating>Name</ion-label>
+         <ion-input type="text" value="" [(ngModel)]="profile.name"></ion-input>
+     </ion-item>
+
+     <ion-item>
+      <ion-label floating>Student ID</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="profile.student" disabled></ion-input>
+    </ion-item>
+
+      <ion-item>
+        <ion-label floating>Program Code</ion-label>
+        <ion-input type="text" value="" [(ngModel)]="profile.program"></ion-input>
+      </ion-item><br>
+
+      <ion-item class="select-service">
+          <ion-label>Group</ion-label>
+          <ion-label></ion-label><br>
+          <ion-select multiple="false" [(ngModel)]="profile.group" required>
+            <ion-option *ngFor="let item of groupRef$ | async">{{item.name}}</ion-option>
+          </ion-select>
+        </ion-item><br>
+
+      <ion-item>
+              <ion-label floating>Phone Number</ion-label>
+              <ion-input type="integer" value="" [(ngModel)]="profile.phoneNum"></ion-input>
+      </ion-item><br>
+
+      
+   
+      
+    <div padding>
+      <button ion-button color="light" block (click)="updateProfile()">Update</button>
+    </div>
+
+</ion-content>

@@ -1,0 +1,20 @@
+page-depan {
+    $colors: (
+        primary:     #387ef5,
+        secondary:   #32db64,
+        danger:      #f53d3d,
+        light:       #f4f4f4,
+        dark:        #222,
+        favorite:    #69BB7B,
+        navbarColor: #009688
+      );
+
+      .navbarLogo{
+        height: 30px;
+        float: left;
+        margin-left:20px;
+        
+      }
+
+    
+}
